@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="js/logging.js"></script>
+    <title>登陆页面</title>
+    <style>
+        body {
+            background-image: url("images/BMC背景图.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        div.header {
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+
+        div.logging {
+            height: 400px;
+            box-sizing: border-box;
+            border-radius: 40px;
+            margin-top: 40px;
+            background-image: linear-gradient(rgba(128, 128, 128, 0.8), rgba(255, 255, 255, 0.3));
+        }
+    </style>
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header" style="text-align: center;">
+        <div style="display: inline-block;"><img src="images/left1.png"></div>
+        <div style="display: inline-block;">
+            <div style="display: inline-block;"><img src="images/xida.png"></div>
+            <div style="display: inline-block;">
+                <h3 style="color: aliceblue;">XX系统</h3>
+            </div>
+        </div>
+        <div style="display: inline-block;"><img src="images/right1.png"></div>
+    </div>
+
+    <!--登录框-->
+    <div class="logging col-sm-4 col-lg-4 offset-lg-4" style="text-align: center;">
+        </br>
+    </br>
+</br>
+        <h4 style="color: aliceblue;">登录</h4>
+    </br>
+</br>
+            <input id="username" placeholder="请输入用户名" required>
+            </br>
+            </br>
+            <input id="password" type="password" placeholder="请输入密码" required>
+            </br>
+            </br>
+            </br>
+            <button onclick="p()">登录</button>
+
+
+    </div>
+
+</body>
+
+</html>

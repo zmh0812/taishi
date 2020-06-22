@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>核心</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        header {
+            background-size: 100% 100px;
+        }
+
+        body {
+            background-image: url("images/BMC背景图.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .card {
+            margin-top: 30px;
+            border-style: solid;
+            border-color: aqua;
+            height: 100px;
+            color: #f0f0f0;
+        }
+
+        .box {
+            background-color: aqua;
+            width: 40%;
+            height: 100%;
+            margin-left: -15px;
+        }
+
+        .pic {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .display {
+            margin-top: 30px;
+        }
+
+        .display_table {
+            margin-top: 30px;
+            border-style: solid;
+            border-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script type="text/javascript" src="js/核心.js"></script>
+
+    <!--头部-->
+    <div class="header" style="margin-top: 20px; text-align: center;">
+        <div style="display: inline-block;"><img src="images/left1.png"></div>
+        <div style="display: inline-block;">
+            <div style="display: inline-block;"><img src="images/xida.png"></div>
+            <div style="display: inline-block;">
+                <h3 style="color: aliceblue;">核心设备</h3>
+            </div>
+        </div>
+        <div style="display: inline-block;"><img src="images/right1.png"></div>
+    </div>
+
+    <!--三个卡片-->
+    <div class="container">
+        <div class="row">
+            <div class="card col-lg-3 col-md-3 col-sm-3 col-xs-10" style="margin-left: 6%;">
+                <div class="card-img-left box" style="display: inline-block;">
+                    <div class="pic"><img src="images/people.png"></div>
+                </div>
+                <div style="display: inline-block; text-align: center;">
+                    <p>文字</p>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-3 col-sm-3 col-xs-10" style="margin-left: 6%;">
+                <div class="card-img-left box" style="display: inline-block;">
+                    <div class="pic"><img src="images/book.png"></div>
+                </div>
+                <div style="display: inline-block; text-align: center;">
+                    <p>文字</p>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-3 col-sm-3 col-xs-10" style="margin-left: 6%;">
+                <div class="card-img-left box" style="display: inline-block;">
+                    <div class="pic"><img src="images/tip.png"></div>
+                </div>
+                <div style="display: inline-block; text-align: center;">
+                    <p>文字</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--展示图表-->
+        <div class="display">
+            <div class="display_table col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div style="text-align: right;">
+                    <div style="display: inline-block;"><img src="images/download.png"></div>
+                    <div style="display: inline-block;"><img src="images/refresh.png"></div>
+                    <div style="display: inline-block;"><img src="images/increase.png"></div>
+                </div>
+                <div id="core1" style="height: 300px;"></div>
+            </div>
+            <div
+                class="display_table col-lg-7 col-md-7 col-sm-7 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                <div style="text-align: right;">
+                    <div style="display: inline-block;"><img src="images/download.png"></div>
+                    <div style="display: inline-block;"><img src="images/refresh.png"></div>
+                    <div style="display: inline-block;"><img src="images/increase.png"></div>
+                </div>
+                <div id="core2" style="height: 300px;"></div>
+            </div>
+            <div class="display_table col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div style="text-align: right;">
+                    <div style="display: inline-block;"><img src="images/download.png"></div>
+                    <div style="display: inline-block;"><img src="images/refresh.png"></div>
+                    <div style="display: inline-block;"><img src="images/increase.png"></div>
+                </div>
+                <div id="core3" style="height: 300px;"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
